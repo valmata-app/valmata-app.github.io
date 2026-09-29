@@ -1,4 +1,5 @@
 export const en = {
+  devBanner: '🚧 The site is under construction. Launching soon.',
   nav: {
     brand: 'VALMATA',
     subtitle: 'Educational math programs',
@@ -36,10 +37,29 @@ export const en = {
     emailLabel: 'Email',
     hwidLabel: 'Device code (HWID)',
     infoTitle: 'Why we need this:',
-    infoEmail: '• Email — the activation key will be sent to it after payment.',
-    infoHwid: '• HWID — links the license to your computer. The code is shown in the MathApp.',
+    infoEmail: 'Email — the activation key will be sent to it after payment.',
+    infoHwid: 'HWID — links the license to your computer. The code is shown in the MathApp.',
     errorEmail: 'Please enter a valid email.',
     errorHwid: 'Please enter the device code (HWID). It is shown in the MathApp.',
+    errorDuplicateHwid: 'The same device code appears twice. Please check the list.',
+    errorAgree: 'Please tick the box — agreement to the rules is required for purchase.',
+
+    corporateHintTitle: 'Group purchase.',
+    corporateHintText: 'Choose the number of computers and enter the code for each. Keys will arrive in one email — distribute them to the group members.',
+    hwidsListLabel: 'Computer codes',
+    minSeatsHint: 'minimum 5',
+    seatLabel: 'Computer',
+    addSeatBtn: 'Add computer',
+    perSeatLabel: 'Price per computer',
+    qtyLabel: 'Number of computers',
+
+    agreePrefix: 'I have read and agree to the',
+    agreeRules: 'Terms of Use',
+    agreeAnd: 'and',
+    agreePrivacy: 'Privacy Policy',
+
+    securePayment:
+      'Secure payment via Lemon Squeezy. We never see or store your bank card details. Only your email is shared with us — the activation key is sent to it.',
   },
   activate: {
     title: 'Recover license key',
@@ -58,5 +78,131 @@ export const en = {
     errorGeneric: 'Failed to get the key. Please check your data.',
     errorNetwork: 'Network error. Please try again later.',
   },
-  footer: { copyright: '© 2026 VALMATA. All rights reserved.' },
+  rules: {
+    back: 'Home',
+    title: 'Terms of Use',
+    intro:
+      'Please read these rules before purchasing. In simple words: how the program works, what you can and cannot do, and why it may stop working.',
+    footer:
+      'If anything is unclear — write to us. We will try to help.',
+
+    s1Title: 'How activation works',
+    s1i1: 'After payment you receive the activation key at the email you provided at purchase.',
+    s1i2: 'On first launch the program binds to your device. This is needed so the license cannot be passed to others.',
+    s1i3: 'One subscription works on one computer and one mobile device (phone OR tablet — your choice).',
+    s1i4: 'Internet is needed only once — at the first activation. After that the program works fully offline.',
+
+    s2Title: 'What is allowed',
+    s2i1: 'Use the program on your own computer and your own mobile device.',
+    s2i2: 'Reinstall the program on the same computer — as many times as you like. The computer stays the same for the program, even if you delete and reinstall it. The key does not need to be entered again.',
+    s2i3: 'Download the installer anywhere and share it with friends — let them try the demo version. The installer is free; the only restriction is on use without a license.',
+
+    s3Title: 'What is prohibited',
+    s3i1: 'Sharing the activation key with other people — friends, relatives, acquaintances. The key is bound to a specific buyer and their device.',
+    s3i2: 'Using the program without a valid license or bypassing the activation protection.',
+    s3i3: 'Cracking, modifying or decompiling the program, selling it or passing it off as your own.',
+
+    s4Title: 'Why the program may stop working',
+    s4i1: 'Subscription expired — you need to renew by purchasing a new one.',
+    s4i2: 'You activated the license on another device via the "Log out from this device" button — the old activation is gone (this is normal, the license moved).',
+    s4i3: 'The computer date is wrong (e.g. the motherboard battery died) — set the correct date in Windows settings.',
+    s4i4: 'You replaced the motherboard or processor — the device code changed. Write to support, we will help re-activate.',
+    s4i5: 'You reinstalled Windows — the device code does not change, the license is preserved. Nothing to do.',
+
+    s5Title: 'What to do if something went wrong',
+    s5i1: 'Write to us — support contacts are in the email with your key.',
+    s5i2: 'Attach the payment receipt or a screenshot of the email with the key.',
+    s5i3: 'We will try to help and sort out your situation.',
+
+    s6Title: 'Refunds',
+    s6i1: 'Within 14 days after purchase you can request a refund if the program does not start and we could not help.',
+    s6i2: 'After successful key activation a refund is impossible — the key is considered used. We can see the activation in our system: date and device. So cheating will not work — but we also will not refuse if the key really was not used.',
+    s6i3: 'To request a refund, write to support with your purchase email and reason.',
+
+    s7Title: 'Privacy',
+    s7i1: 'We collect only two types of data: email (to send the key) and device code (HWID, to bind the license).',
+    s7i2: 'We do not share your data with third parties or use it for advertising.',
+    s7i3: 'Payment goes through Lemon Squeezy — we neither see nor store your bank card details.',
+
+    s8Title: 'Transferring the license to a new device',
+    s8i1: 'If the old device broke, was lost or you bought a new one — the license can be transferred.',
+    s8i2: 'For mobile devices: the app has a "Log out from this device" button. Press it — the license is freed, then activate it on a new phone or tablet. You can do this yourself without contacting support.',
+    s8i3: 'For computers: write to support — we will help free of charge.',
+    s8i4: 'First transfer — free, at any time.',
+    s8i5: 'Second transfer — free, but not earlier than 6 months after the previous one.',
+    s8i6: 'Third and subsequent transfers — only by agreement with support. We review each case individually. If transfers are frequent without an objective reason — support may refuse.',
+    s8i7: 'Unconditional free transfer — if a service center report is provided confirming that repair is impossible or economically unfeasible (repair cost is comparable to the price of a new device). In that case the transfer is free at any time, regardless of the transfer count.',
+    s8i8: 'Individual review — if the situation does not fall under the criterion above, but the reason is valid, write to support. We review each request and try to help.',
+
+    s9Title: 'How to distinguish us from scammers',
+    s9i1: 'Our only official website is: valmata-app.github.io. Payment is accepted only on our website via Lemon Squeezy. We never ask to transfer money directly to a card, phone or through other systems.',
+    s9i2: 'We never write to you first. If someone writes to you on WhatsApp, Telegram or Instagram and introduces themselves as VALMATA — it is a scammer. We communicate only in response to your request.',
+    s9i3: 'We never ask for: your card details (number, CVC, expiry), SMS codes, banking app passwords, email or social media passwords.',
+    s9i4: 'If you received a suspicious message from VALMATA — do not reply, do not click links, do not pay. Write to us via the official contact — we will confirm whether it is our employee.',
+    s9i5: 'Remember: real activation keys are issued only after payment via Lemon Squeezy. If someone offers a "cheaper key", "without payment" or "through an acquaintance" — it is a scam.',
+  },
+  privacy: {
+    back: 'Home',
+    title: 'Privacy Policy',
+    intro:
+      'We respect your privacy and collect the minimum data — only what is needed for the license to work. In simple words: what data we receive, why, to whom we pass it, and how you can control it.',
+    footer:
+      'If you have any questions about data processing — write to us, we will try to help.',
+
+    s1Title: 'What data we collect',
+    s1i1: 'Email — the address you provided at purchase. Needed to send the activation key and contact you about the license.',
+    s1i2: 'Device code (HWID) — a unique identifier of your computer or mobile device. Needed to bind the license to the device and protect it from being passed to others. This is not a serial number or personal data — just a set of characters generated by the program.',
+    s1i3: 'Technical data for the website — IP address and browser type. Used only to protect against spam and attacks, never stored.',
+
+    s2Title: 'Why we collect it',
+    s2i1: 'To issue the activation key after payment.',
+    s2i2: 'To verify the license when the program starts.',
+    s2i3: 'To contact you about your purchase or activation.',
+
+    s3Title: 'To whom we pass data',
+    s3i1: 'Lemon Squeezy — the payment system through which the payment goes. We pass them your email — to send a receipt and purchase confirmation. We neither see nor pass on your bank card details.',
+    s3i2: 'Resend — an email sending service. Through it the activation key reaches your inbox. We pass only the email and the letter text.',
+    s3i3: 'We do not sell or share your data with third parties for marketing, advertising or any other purposes.',
+
+    s4Title: 'Where the data is stored',
+    s4i1: 'Email and device code are stored on our server hosted at the Suga Cloud data center (Europe).',
+    s4i2: 'Payment data (card number, CVC) is stored in the secure Lemon Squeezy system and never reaches us.',
+    s4i3: 'We do not store data outside our server.',
+
+    s5Title: 'How long we store data',
+    s5i1: 'While the license is active and for 1 year after it ends — in case you want to renew or recover the key.',
+    s5i2: 'You can request deletion of data at any time (see section 6).',
+    s5i3: 'Lemon Squeezy stores payment documents under its own rules — usually 3–5 years, in accordance with tax law.',
+
+    s6Title: 'Your rights',
+    s6i1: 'To know what data we store about you — write to us, we will send an extract.',
+    s6i2: 'To correct data — if the email or device code was entered with an error.',
+    s6i3: 'To delete data — on your request we will delete all information except what we are legally required to keep. After deletion, the license will stop working and cannot be restored.',
+    s6i4: 'To withdraw consent — you can ask us to stop processing data at any time, but this will also revoke the license.',
+
+    s7Title: 'Cookies and analytics',
+    s7i1: 'We do not use cookies and do not track your behaviour on other websites.',
+    s7i2: 'We collect internal anonymous statistics — which pages are opened, which buttons are pressed, how long visitors stay. This is needed to understand what is in demand and what is not, and to improve the service.',
+    s7i3: 'This statistics is not linked to your identity. We do not know what exactly you looked at. We only see general figures: "page X was opened N times, button Y was pressed M times".',
+    s7i4: 'We do not connect third-party analytics services (Google Analytics, Facebook Pixel, Yandex.Metrica, etc.) and do not pass data to advertising networks.',
+
+    s8Title: 'Changes to the policy',
+    s8i1: 'If we change the policy, we will update this page and indicate the date of the last change.',
+    s8i2: 'We will additionally notify you of significant changes by email.',
+
+    s9Title: 'Contacts',
+    s9i1: 'For any questions related to the processing of your data, write to support — the contact is in the email with your activation key.',
+    s9i2: 'We always try to resolve the issue peacefully.',
+  },
+  footer: {
+    importantTitle: 'Important to read before purchase',
+    importantText:
+      'The rules explain in simple words: how activation works, what you can and cannot do, why the program may stop working, and how to get help. Takes 2 minutes — we recommend reading before purchase.',
+    rulesLink: '📖 Terms of Use (must read)',
+    privacyLink: '🔒 Privacy Policy',
+    scamWarningTitle: 'Beware of scammers.',
+    scamWarning:
+      'We never write first and never ask for card details. The only official website is valmata-app.github.io.',
+    copyright: '© 2026 VALMATA. All rights reserved.',
+  },
 };
