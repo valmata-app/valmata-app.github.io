@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from '../../components/Button.jsx';
 import { API_URL } from '../../config.js';
 
 export default function ActivatePage({ t, onBack }) {
@@ -25,7 +24,7 @@ export default function ActivatePage({ t, onBack }) {
           email: email.trim().toLowerCase(),
           hwid: hwid.trim().toUpperCase(),
           programId: 'mathapp-1',
-          months: 1, // TODO: брать из оплаты на сервере (сейчас заглушка)
+          months: 1,
         }),
       });
 
@@ -83,7 +82,10 @@ export default function ActivatePage({ t, onBack }) {
           <p className="text-xs text-[#86868B]">{t.activate.emailHint}</p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-[#E5E5EA] p-6 shadow-sm">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white rounded-2xl border border-[#E5E5EA] p-6 shadow-sm"
+        >
           <label className="block mb-4">
             <span className="block text-xs font-semibold text-[#1D1D1F] mb-2">
               {t.activate.emailLabel}
@@ -121,13 +123,16 @@ export default function ActivatePage({ t, onBack }) {
             </div>
           )}
 
-          <Button
-            variant="primary"
+          <button
+            type="submit"
             disabled={status === 'loading'}
-            className="w-full"
+            className={
+              'w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-full shadow-sm transition ' +
+              (status === 'loading' ? 'opacity-60 cursor-not-allowed' : '')
+            }
           >
             {status === 'loading' ? t.activate.loading : t.activate.btnSubmit}
-          </Button>
+          </button>
         </form>
       )}
     </div>
